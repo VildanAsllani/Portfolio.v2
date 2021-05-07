@@ -6,6 +6,30 @@ body {
   background-color: #FAFAFA;
 }
 
+a {
+  color: #292929;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px #ebebeb;
+          box-shadow: 0px 1px #ebebeb;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background-color: #FEBF3E;
+}
+
+.btn-default {
+  background-color: white;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -44,5 +68,42 @@ header nav ul li:hover {
 
 header nav ul .active {
   color: #FEBF3E;
+}
+
+.call-to-action {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.call-to-action img {
+  width: 250px;
+  border-radius: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.call-to-action .introduction p {
+  opacity: .5;
+  margin-bottom: 10px;
+}
+
+.call-to-action .introduction h1 {
+  font-size: 40px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.call-to-action .cta-buttons {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.call-to-action .cta-buttons .btn {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
