@@ -20,6 +20,12 @@ a {
   -webkit-box-shadow: 0px 1px #ebebeb;
           box-shadow: 0px 1px #ebebeb;
   font-size: 15px;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.btn:hover {
+  opacity: .9;
 }
 
 .btn-primary {
@@ -105,5 +111,35 @@ header nav ul .active {
 .call-to-action .cta-buttons .btn {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.fixed-social {
+  position: fixed;
+  bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #FAFAFA;
+  height: 40px;
+}
+
+.fixed-social small {
+  padding-right: 20px;
+}
+
+.fixed-social .socials {
+  border-left: 1px solid gray;
+  padding-left: 20px;
+}
+
+.fixed-social .socials a {
+  padding: 4px;
 }
 /*# sourceMappingURL=style.css.map */
