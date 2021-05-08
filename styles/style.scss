@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 $primaryColor:#FEBF3E;
 $backColor:#FAFAFA;
 $fontColor:#292929;
@@ -8,7 +10,8 @@ $fontColor:#292929;
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background-color: $backColor;
     color: $fontColor;
 }
@@ -16,10 +19,14 @@ a{
     color:$fontColor;
     text-decoration: none;
 }
+.circle{
+    border-radius: 50%;
+}
 .center{
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin:40px auto 40px auto;
     h2{
         margin-left: 20px;
     }
@@ -34,6 +41,9 @@ a{
     box-shadow: 0px 2px 3px #00000027;
     font-size: 15px;
     transition: background-color .3s;
+    i{
+        margin-right: 10px;
+    }
 }
 .btn-primary{
     background-color: $primaryColor;
@@ -85,8 +95,6 @@ header{
     justify-content: center;
     img{
         width: 250px;
-        border-radius: 50%;
-        // padding-bottom: 40px;
         justify-self: center;
     }
     .introduction{
@@ -162,6 +170,43 @@ header{
         box-shadow: 3px 3px 10px rgb(240, 240, 240);
         i{
             font-size: 30px;
+        }
+    }
+}
+
+.profile{
+    // background-color: #FEBF3E;
+    display: grid;
+    grid-template-columns: 400px auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    .left-profile{
+        // background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            // width: 100%;
+            // border-radius: 50%;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+    }
+    .right-profile{
+        display: grid;
+        grid-gap: 20px;
+        .skills{
+            h3{
+                color: $primaryColor;
+            }
+            p{
+                line-height: 2;
+            }
+            div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
     }
 }
