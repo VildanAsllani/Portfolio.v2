@@ -8,6 +8,11 @@ body {
   color: #292929;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 a {
   color: #292929;
   text-decoration: none;
@@ -426,5 +431,43 @@ footer .socials i {
 
 .blog .timer div h1 {
   font-size: 50px;
+}
+
+.form {
+  margin: 50px auto;
+  max-width: 600px;
+  height: auto;
+}
+
+.form .inp-text {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #D5D5D5;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.form .inp-text:focus {
+  outline: 2px solid #FEBF3E;
+  border: 1px solid white;
+}
+
+.form textarea {
+  width: 100%;
+  border: 1px solid #D5D5D5;
+  margin-bottom: 10px;
+}
+
+.form textarea:focus {
+  outline: 2px solid #FEBF3E;
+  border: 1px solid white;
+}
+
+.form .inp-button {
+  min-width: 100px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  font-family: 'Roboto Mono', monospace;
 }
 /*# sourceMappingURL=style.css.map */

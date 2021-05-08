@@ -15,6 +15,9 @@ body{
     background-color: $backColor;
     color: $fontColor;
 }
+*{
+    box-sizing: border-box;
+}
 a{
     color:$fontColor;
     text-decoration: none;
@@ -106,6 +109,7 @@ header{
     display: grid;
     grid-row-gap: 30px;
     justify-content: center;
+    // min-height: calc(100vh-150px);
     img{
         width: 250px;
         justify-self: center;
@@ -336,5 +340,41 @@ footer{
                 font-size: 50px;
             }
         }
+    }
+}
+
+
+.form{
+    margin: 50px auto;
+    max-width: 600px;
+    height: auto;
+    .inp-text{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #D5D5D5;
+        font-family: 'Roboto Mono', monospace;
+        &:focus{
+            outline:2px solid $primaryColor;
+            border:1px solid white;
+        }
+    }
+    textarea{
+        width: 100%;
+        border: 1px solid #D5D5D5;
+        margin-bottom: 10px;
+        &:focus{
+            outline:2px solid $primaryColor;
+            border:1px solid white;
+        }
+    }
+    .inp-button{
+        // height: 40px;
+        min-width: 100px;
+        border: none;
+        // background-color: $primaryColor;
+        cursor: pointer;
+        border-radius: 0;
+        font-family: 'Roboto Mono', monospace;
     }
 }
