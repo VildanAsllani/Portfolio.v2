@@ -20,10 +20,36 @@ a {
 .center {
   max-width: 1200px;
   margin: 40px auto 40px auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.center h2 {
-  margin-left: 20px;
+.ml-30 {
+  margin-left: 30px;
+}
+
+.full-div {
+  background-color: white;
+  padding: 40px 0px;
+}
+
+.vertically-aligned {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 500px;
+}
+
+.horizontally-aligned {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .btn {
@@ -165,16 +191,6 @@ header nav ul .active {
   padding: 4px;
 }
 
-.vertically-aligned {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 500px;
-}
-
 .h1-introduction {
   font-size: 40px;
   padding-left: 20px;
@@ -190,8 +206,6 @@ header nav ul .active {
 
 .cards {
   color: #292929;
-  margin-right: 20px;
-  margin-left: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -201,14 +215,21 @@ header nav ul .active {
 
 .cards .card {
   padding: 30px;
-  background-color: white;
   border-radius: 20px;
-  -webkit-box-shadow: 3px 3px 10px #f0f0f0;
-          box-shadow: 3px 3px 10px #f0f0f0;
+  border: 3px solid white;
+  cursor: pointer;
 }
 
 .cards .card i {
   font-size: 30px;
+}
+
+.cards .card:hover {
+  border: 3px solid #FEBF3E;
+}
+
+.cards .card p {
+  font-size: 15px;
 }
 
 .profile {
@@ -370,5 +391,40 @@ footer .socials i {
 
 .btn-decoration i {
   margin-left: 10px;
+}
+
+.blog {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog h5 {
+  margin-bottom: 50px;
+}
+
+.blog .timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog .timer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog .timer div h1 {
+  font-size: 50px;
 }
 /*# sourceMappingURL=style.css.map */

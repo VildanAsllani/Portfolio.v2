@@ -24,12 +24,25 @@ a{
 }
 .center{
     max-width: 1200px;
-    // margin-left: auto;
-    // margin-right: auto;
     margin:40px auto 40px auto;
-    h2{
-        margin-left: 20px;
-    }
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.full-div{
+    background-color: white;
+    padding: 40px 0px;
+}
+.vertically-aligned{
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+}
+.horizontally-aligned{
+    display: flex;
+    justify-content: center;
 }
 
 .btn{
@@ -138,12 +151,6 @@ header{
         }
     }
 }
-
-.vertically-aligned{
-    display: flex;
-    align-items: center;
-    min-height: 500px;
-}
 .h1-introduction{
     font-size: 40px;
     padding-left: 20px;
@@ -158,36 +165,54 @@ header{
 
 .cards{
     color: $fontColor;
-    margin-right: 20px;
-    margin-left: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     .card{
         padding:30px;
-        background-color: white;
         border-radius: 20px;
-        box-shadow: 3px 3px 10px rgb(240, 240, 240);
+        border: 3px solid white;
+        cursor: pointer;
         i{
             font-size: 30px;
+        }
+        &:hover{
+            border: 3px solid $primaryColor;
+        }
+        p{
+            font-size: 15px;
         }
     }
 }
 
+// .cards{
+//     color: $fontColor;
+//     margin-right: 20px;
+//     margin-left: 20px;
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     grid-gap: 20px;
+//     .card{
+//         padding:30px;
+//         background-color: white;
+//         border-radius: 20px;
+//         box-shadow: 3px 3px 10px rgb(240, 240, 240);
+//         i{
+//             font-size: 30px;
+//         }
+//     }
+// }
+
 .profile{
-    // background-color: #FEBF3E;
     display: grid;
     grid-template-columns: 400px auto;
     padding-bottom: 30px;
     padding-top: 30px;
     .left-profile{
-        // background-color: blueviolet;
         display: flex;
         flex-direction: column;
         align-items: center;
         img{
-            // width: 100%;
-            // border-radius: 50%;
             height: 200px;
             margin-bottom: 30px;
         }
@@ -218,7 +243,6 @@ footer{
         margin-bottom: 100px;
         h1{
             padding-top: 80px;
-            // color: $primaryColor;
             color: white;
         }
         p{
@@ -291,5 +315,26 @@ footer{
     }
     i{
         margin-left: 10px;
+    }
+}
+
+.blog{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    // background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5{
+        margin-bottom: 50px;
+    }
+    .timer{
+        display: flex;
+        div{
+            display: flex;
+            h1{
+                font-size: 50px;
+            }
+        }
     }
 }

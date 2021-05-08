@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fontawesome-free-5.15.3-web/css/all.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li>HOME</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+                <a href="#"><li>PROJECTS</li></a>
+                <a href="blog.html"><li class="active">BLOG</li></a>
+                <a href="#"><li>CONTACT</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="center blog">
+        <div class="timer">
+            <div class="days">
+                <h1 id="day">0</h1>
+                <small>days</small>
+            </div>
+            <div class="hours">
+                <h1 id="hour">0</h1>
+                <small>hours</small>
+            </div>
+            <div class="minutes">
+                <h1 id="minute">0</h1>
+                <small>minutes</small>
+            </div>
+            <div class="seconds">
+                <h1 id="second">0</h1>
+                <small>seconds</small>
+            </div>
+        </div>
+        <h5>The page is under construction</h5>
+        <div class="buttons">
+            <a href="#" class="btn btn-primary"><i class="fa fa-file-pdf"></i>RESUME</a>
+            <a href="#" class="btn btn-default">MY WORK</a>
+            <a href="#" class="btn btn-default">CHECK MY PROFILE</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="lets-work-together center">
+            <center>
+                <h1>Let's work together.</h1>
+                <p>I'm available for freelance work</p>
+            </center>
+            <div class="grid">
+                <div class="grid-column">
+                    <i class="fas fa-phone"></i>
+                    <strong>Phone Me:</strong>
+                    <p>+383 45 289 099</p>
+                </div>
+                <div class="grid-column">
+                    <i class="fas fa-paper-plane"></i>
+                    <strong>Mail Me:</strong>
+                    <p>vildanasllani@gmail.com</p>
+                </div>
+                <div class="grid-column">
+                    <i class="fab fa-linkedin"></i>
+                    <strong>Check My Work:</strong>
+                    <p><a href="https://github.com/vildanasllani">Github page</a></p>
+                </div>
+            </div>
+        </div>
+        <center>
+            <a href="#" class="btn-decoration">SAY HELLO<i class="fas fa-long-arrow-alt-right"></i></a>
+        </center>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        
+    </footer>
+
+    <script>
+        var countDownDate = new Date("May 25, 2021 00:00:00").getTime();
+        
+        var countdownfunction = setInterval(function() {
+        
+          var now = new Date().getTime();
+          
+          var distance = countDownDate - now;
+          
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+            document.getElementById('day').innerHTML=days;
+            document.getElementById('hour').innerHTML=hours;
+            document.getElementById('minute').innerHTML=minutes;
+            document.getElementById('second').innerHTML=seconds;
+
+          if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demo").innerHTML = "THE FEATURE SHOULD BE IMPLEMENTED BY NOW :D";
+          }
+        }, 1000);
+        </script>
+</body>
+</html>
