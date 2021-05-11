@@ -90,6 +90,12 @@ a {
   background-color: #DEDEDE;
 }
 
+.btn-disabled {
+  opacity: .5;
+  cursor: default !important;
+  pointer-events: none;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -456,6 +462,7 @@ footer .socials i {
   width: 100%;
   border: 1px solid #D5D5D5;
   margin-bottom: 10px;
+  padding: 10px;
 }
 
 .form textarea:focus {
@@ -469,5 +476,43 @@ footer .socials i {
   cursor: pointer;
   border-radius: 0;
   font-family: 'Roboto Mono', monospace;
+}
+
+.projects {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 30px;
+}
+
+.projects .project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr auto;
+      grid-template-columns: 80px 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.projects .project:last-child {
+  border-bottom: none;
+}
+
+.projects .project h1 {
+  opacity: .3;
+}
+
+.projects .project .title h2 {
+  padding-bottom: 5px;
+  margin: 0px;
+}
+
+.projects .project .title .tags small {
+  background-color: #FEBF3E;
+  padding: 3px 10px;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
