@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fontawesome-free-5.15.3-web/css/all.css">
     <link rel="stylesheet" href="styles/tablet-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -24,7 +25,7 @@
         </nav>
         <i class="fas fa-bars" id="menu-open"></i>
     </header>
-    <div class="center vertically-aligned">
+    <div class="center vertically-aligned" data-aos="fade-right">
         <h1 class="h1-introduction">
             I am a passionate <strong>web developer </strong>with a clear vision, great knowledge, easily adaptable to the latest technologies and a good eye for design.</h1>
     </div>
@@ -58,7 +59,7 @@
                 <img src="images/free-profile-photo-whatsapp-4.png" class="circle" alt="My profile picture">
                 <div class="buttons">
                     <a href="#" class="btn btn-primary"><i class="fa fa-file-pdf"></i>Resume</a>
-                    <a href="#" class="btn btn-default"><i class="fab fa-github"></i>Repository</a>
+                    <a href="#" class="btn btn-default"><i class="fab fa-github"></i>Git</a>
                 </div>
             </div>
             <div class="right-profile">
@@ -116,7 +117,7 @@
                     <p>vildanasllani@gmail.com</p>
                 </div>
                 <div class="grid-column">
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
                     <strong>Check My Work:</strong>
                     <p><a href="https://github.com/vildanasllani">Github page</a></p>
                 </div>
@@ -135,5 +136,9 @@
         
     </footer>
     <script src="scripts/navigation.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
