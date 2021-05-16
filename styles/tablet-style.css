@@ -136,5 +136,26 @@
         grid-template-columns: 1fr;
     grid-gap: 40px;
   }
+  .projects .project {
+    -ms-grid-columns: 80px 1fr;
+        grid-template-columns: 80px 1fr;
+    grid-row-gap: 20px;
+  }
+  .projects .project h1 {
+    font-size: 27px;
+  }
+  .projects .project .buttons {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: right;
+    padding: 10px;
+  }
+  .projects .project .title .tags {
+    line-height: 2;
+  }
+  .projects .project .title .tags small {
+    padding: 3px 6px;
+  }
 }
 /*# sourceMappingURL=tablet-style.css.map */

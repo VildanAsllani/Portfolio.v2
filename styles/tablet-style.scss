@@ -127,4 +127,28 @@
             }
         }
     }
+
+    .projects{
+        .project{
+            grid-template-columns: 80px 1fr;
+            grid-row-gap: 20px;
+            h1{
+                font-size: 27px;
+            }
+            .buttons{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                text-align: right;
+                padding: 10px;
+            }
+            .title{
+                .tags{
+                    line-height: 2;
+                    small{
+                        padding: 3px 6px;
+                    }
+                }
+            }
+        }
+    }
 }

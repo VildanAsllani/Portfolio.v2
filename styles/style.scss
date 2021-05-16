@@ -382,12 +382,10 @@ footer{
     row-gap: 30px;
     .project{
         &:last-child{
-            // background-color: yellow;
             border-bottom: none;
         }
         display: grid;
         grid-template-columns: 80px 1fr auto;
-        // background-color: #FEBF3E;
         align-items: center;
         padding-bottom: 30px;
         border-bottom: 2px solid rgb(240, 240, 240);
