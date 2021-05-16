@@ -8,10 +8,12 @@
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="styles/tablet-style.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navigation">
+            <i class="fas fa-times" id="menu-close"></i>
             <ul>
                 <a href="index.html"><li>HOME</li></a>
                 <a href="about.html"><li>ABOUT</li></a>
@@ -20,7 +22,9 @@
                 <a href="contact.html"><li class="active">CONTACT</li></a>
             </ul>
         </nav>
+        <i class="fas fa-bars" id="menu-open"></i>
     </header>
+
     <div class="center">    
         <h1>Get in touch</h1>
         <p>If you want to collaborate feel free to send me a message</p>
@@ -67,7 +71,8 @@
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-github"></i></a>
         </div>
-        
     </footer>
+    
+    <script src="scripts/navigation.js"></script>
 </body>
 </html>

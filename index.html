@@ -17,7 +17,6 @@
         <nav id="navigation">
             <i class="fas fa-times" id="menu-close"></i>
             <ul>
-                <!-- <a href="#"><li> <i class="fas fa-times" id="menu-close"></i></li></a> -->
                 <a href="index.html"><li class="active">HOME</li></a>
                 <a href="about.html"><li>ABOUT</li></a>
                 <a href="projects.html"><li>PROJECTS</li></a>
@@ -48,18 +47,6 @@
             <a href="#"><i class="fab fa-github"></i></a>
         </div>
     </div>
-<script>
-    var nav = document.getElementById('navigation');
-    var menuOpen = document.getElementById('menu-open');
-    var menuClose = document.getElementById('menu-close');
-    
-    menuOpen.addEventListener("click", function(){
-        nav.style.left="0";
-    });
-
-    menuClose.addEventListener("click",function(){
-        nav.style.left="-100%";
-    });
-</script>
+<script src="scripts/navigation.js"></script>
 </body>
 </html>
