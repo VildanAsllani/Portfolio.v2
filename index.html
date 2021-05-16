@@ -7,12 +7,15 @@
     <title>Home</title>
     <meta name="description" content="Vildan Asllani Portfolio">
     <meta name="keywords" content="Vildan Asllani, Portfolio, Programing, Coder, Fullstack Developer, Albanian Developer, Kosovo Developers">
+    <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="styles/tablet-style.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navigation">
+            <i class="fa fa-times" id="menu-close"></i>
             <ul>
                 <a href="index.html"><li class="active">HOME</li></a>
                 <a href="about.html"><li>ABOUT</li></a>
@@ -21,6 +24,7 @@
                 <a href="contact.html"><li>CONTACT</li></a>
             </ul>
         </nav>
+        <i class="fa fa-bars" id="menu-open"></i>
     </header>
     <div class="call-to-action">
         <img src='images/free-profile-photo-whatsapp-4.png' class="circle" alt="My profile picture">
@@ -43,5 +47,18 @@
             <a href="#"><i class="fab fa-github"></i></a>
         </div>
     </div>
+<script>
+    var nav = document.getElementById('navigation');
+    var menuOpen = document.getElementById('menu-open');
+    var menuClose = document.getElementById('menu-close');
+    
+    menuOpen.addEventListener("click", function(){
+        nav.style.left="0";
+    });
+
+    menuClose.addEventListener("click",function(){
+        nav.style.left="-100%";
+    });
+</script>
 </body>
 </html>
