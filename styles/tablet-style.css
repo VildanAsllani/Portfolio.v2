@@ -163,5 +163,8 @@
     width: 70%;
     grid-row-gap: 10px;
   }
+  .form .inp-button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=tablet-style.css.map */

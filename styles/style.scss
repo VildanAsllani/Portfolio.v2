@@ -353,8 +353,11 @@ footer{
             outline:2px solid $primaryColor;
             border:1px solid white;
         }
+        -webkit-appearance: none;
+        -webkit-border-radius:0; 
     }
     textarea{
+        -webkit-appearance: none;
         width: 100%;
         border: 1px solid #D5D5D5;
         margin-bottom: 10px;
@@ -363,8 +366,10 @@ footer{
             outline:2px solid $primaryColor;
             border:1px solid white;
         }
+        -webkit-border-radius:0; 
     }
     .inp-button{
+        -webkit-appearance: none;
         // height: 40px;
         min-width: 100px;
         border: none;
