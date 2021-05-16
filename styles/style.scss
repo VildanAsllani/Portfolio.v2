@@ -197,27 +197,10 @@ header{
         }
         p{
             font-size: 15px;
+            line-height: 2;
         }
     }
 }
-
-// .cards{
-//     color: $fontColor;
-//     margin-right: 20px;
-//     margin-left: 20px;
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-gap: 20px;
-//     .card{
-//         padding:30px;
-//         background-color: white;
-//         border-radius: 20px;
-//         box-shadow: 3px 3px 10px rgb(240, 240, 240);
-//         i{
-//             font-size: 30px;
-//         }
-//     }
-// }
 
 .profile{
     display: grid;

@@ -245,6 +245,7 @@ header nav ul .active {
 
 .cards .card p {
   font-size: 15px;
+  line-height: 2;
 }
 
 .profile {

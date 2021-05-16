@@ -57,9 +57,10 @@
   }
   .call-to-action .introduction p {
     margin-bottom: 10px;
+    font-size: 12px;
   }
   .call-to-action .introduction h1 {
-    font-size: 25px;
+    font-size: 27px;
   }
   .call-to-action .cta-buttons {
     width: 100%;
@@ -70,9 +71,65 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 5px;
   }
   .call-to-action .cta-buttons .btn {
     margin: 10px 10px 0px 10px;
+  }
+  .h1-introduction {
+    font-size: 27px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
+    font-weight: 400;
+    color: #212121;
+  }
+  .ml-30 {
+    font-size: 27px;
+  }
+  .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .profile {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .profile .right-profile {
+    padding: 30px;
+    margin-top: 30px;
+  }
+  .profile .right-profile .skills div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .profile .right-profile .skills div h3 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .profile .right-profile .skills div small {
+    font-size: 13px;
+  }
+  footer .lets-work-together h1 {
+    font-size: 27px;
+  }
+  footer .lets-work-together p {
+    font-size: 15px;
+  }
+  footer .lets-work-together .grid {
+    margin-top: 60px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 40px;
   }
 }
 /*# sourceMappingURL=tablet-style.css.map */
