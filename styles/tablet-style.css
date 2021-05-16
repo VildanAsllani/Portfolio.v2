@@ -157,5 +157,11 @@
   .projects .project .title .tags small {
     padding: 3px 6px;
   }
+  .blog .buttons {
+    display: -ms-grid;
+    display: grid;
+    width: 70%;
+    grid-row-gap: 10px;
+  }
 }
 /*# sourceMappingURL=tablet-style.css.map */

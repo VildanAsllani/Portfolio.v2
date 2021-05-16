@@ -151,4 +151,12 @@
             }
         }
     }
+
+    .blog{
+        .buttons{
+            display: grid;
+            width: 70%;
+            grid-row-gap: 10px;
+        }
+    }
 }
